@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+html, body  {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb078;
+}
+
+.app {
+    display: grid;
+    grid-template-rows: 0.25fr 0.15fr 0.4fr;
+    height: 600px;
+    width: 300px;
+    background-color: #ebebeb;
+    color: #21313f;
+    border-radius: 25px;
+}
+
+.screen {
+    padding: 25px;
+    display: grid;
+    align-items: end;
+    justify-content: flex-end;
+    font-size: 3rem;
+    font-weight: 300;
+    word-break: break-all;
+}
+
+.mid_screen {
+    display: grid;
+    justify-content: flex-end;
+    align-items: end;
+    padding: 25px;
+    font-size: 1.2rem;
+    color: #a4aaae;
+}
+.numpad {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+}
+
+.numpad button {
+    border-radius: 10px;
+    margin: 5px;
+    border: none;
+    padding: 20px;
+    font-size: 1rem;
+    background-color: #efedee;
+    color: #a4aaae;
+    box-shadow: 2px 2px 3px #a4aaae, -2px -2px 3px #efedee;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button.orange {
+    background-color: #ed7f2d;
+    color: #fcf0e6;
+    grid-column: 3/5;
+    border-radius: 10px;
+}
+
+
+.numpad button:active {
+    transform: scale(0.5);
+}
